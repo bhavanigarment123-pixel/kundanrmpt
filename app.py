@@ -9,5 +9,8 @@ def home():
 
 @app.get("/run")
 async def run():
-    count = await run_scraper()
-    return {"message": f"Scraped {count} products"}
+    try:
+        count = await run_scraper()
+        return {"scraped_products": count}
+    except Exception as e:
+        return {"error": str(e)}
