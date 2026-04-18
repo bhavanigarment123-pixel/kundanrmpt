@@ -119,5 +119,6 @@ async def run_scraper():
             writer.writerows(all_data)
 
         await browser.close()
+        return len(all_data)
 
         return len(all_data)
