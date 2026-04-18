@@ -1,0 +1,14 @@
+{
+  "build": {
+    "nixpacksPlan": {
+      "phases": {
+        "install": {
+          "cmds": [
+            "pip install -r requirements.txt",
+            "playwright install"
+          ]
+        }
+      }
+    }
+  }
+}
