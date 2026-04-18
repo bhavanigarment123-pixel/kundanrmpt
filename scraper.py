@@ -87,6 +87,7 @@ async def extract_products(page, brand_url):
 
 
 async def run_scraper():
+  async def run_scraper():  
     async with async_playwright() as p:
         browser = await p.chromium.launch(
     headless=True,
